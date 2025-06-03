@@ -1,5 +1,12 @@
 #! /bin/bash
 # shellcheck disable=SC2164
+wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
+ 
+sudo rpm -Uvh mysql80-community-release-el9-1.noarch.rpm
+ 
+sudo dnf --disablerepo=* --enablerepo=mysql80-community install mysql-community-client -y
+mysql --version
+
 cd /home/ec2-user ||exit 1
 sudo dnf update -y
 sudo dnf install python3 python3-pip git
