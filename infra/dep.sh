@@ -10,7 +10,7 @@ mysql --version
 cd /home/ec2-user ||exit 1
 sudo dnf update -y
 sudo dnf install python3 python3-pip git
-git clone https://github.com/kirtiprajapat/python-mysql-db-proj-1.git
+git clone https://github.com/kirtiprajapat/python-mysql-db-proj-1.git  
 sleep 10
 # shellcheck disable=SC2164
 cd python-mysql-db-proj-1
